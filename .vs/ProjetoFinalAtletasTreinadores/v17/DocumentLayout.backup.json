@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|solutionrelative:projetofinalatletastreinadores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|c:\\users\\asus-pc\\desktop\\licenciatura\\3 ano\\engsoft\\projeto\\projetofinalatletastreinadores\\projetofinalatletastreinadores\\models\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|solutionrelative:projetofinalatletastreinadores\\models\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|c:\\users\\asus-pc\\desktop\\licenciatura\\3 ano\\engsoft\\projeto\\projetofinalatletastreinadores\\projetofinalatletastreinadores\\models\\treinador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|solutionrelative:projetofinalatletastreinadores\\models\\treinador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|c:\\users\\asus-pc\\desktop\\licenciatura\\3 ano\\engsoft\\projeto\\projetofinalatletastreinadores\\projetofinalatletastreinadores\\models\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|solutionrelative:projetofinalatletastreinadores\\models\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FB0060B-B4F4-4A08-BA37-9CE04AAEB17C}|ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores.csproj|c:\\users\\asus-pc\\desktop\\licenciatura\\3 ano\\engsoft\\projeto\\projetofinalatletastreinadores\\projetofinalatletastreinadores\\models\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "ProjetoFinalAtletasTreinadores\\appsettings.json",
               "ToolTip": "C:\\Users\\ASUS-PC\\Desktop\\Licenciatura\\3 ano\\EngSoft\\Projeto\\ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores\\appsettings.json",
               "RelativeToolTip": "ProjetoFinalAtletasTreinadores\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-26T21:52:27.595Z",
               "EditorCaption": ""
@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "ProjetoFinalAtletasTreinadores\\Program.cs",
               "ToolTip": "C:\\Users\\ASUS-PC\\Desktop\\Licenciatura\\3 ano\\EngSoft\\Projeto\\ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores\\Program.cs",
               "RelativeToolTip": "ProjetoFinalAtletasTreinadores\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T16:50:15.524Z",
               "EditorCaption": ""
@@ -76,8 +76,7 @@
               "RelativeToolTip": "ProjetoFinalAtletasTreinadores\\Models\\Contacto.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAYwF0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T18:50:14.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T18:50:14.814Z"
             },
             {
               "$type": "Document",
@@ -87,14 +86,14 @@
               "RelativeDocumentMoniker": "ProjetoFinalAtletasTreinadores\\Controllers\\AtletaController.cs",
               "ToolTip": "C:\\Users\\ASUS-PC\\Desktop\\Licenciatura\\3 ano\\EngSoft\\Projeto\\ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores\\Controllers\\AtletaController.cs",
               "RelativeToolTip": "ProjetoFinalAtletasTreinadores\\Controllers\\AtletaController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T19:35:12.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Treinador.cs",
               "DocumentMoniker": "C:\\Users\\ASUS-PC\\Desktop\\Licenciatura\\3 ano\\EngSoft\\Projeto\\ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores\\Models\\Treinador.cs",
               "RelativeDocumentMoniker": "ProjetoFinalAtletasTreinadores\\Models\\Treinador.cs",
@@ -107,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Atleta.cs",
               "DocumentMoniker": "C:\\Users\\ASUS-PC\\Desktop\\Licenciatura\\3 ano\\EngSoft\\Projeto\\ProjetoFinalAtletasTreinadores\\ProjetoFinalAtletasTreinadores\\Models\\Atleta.cs",
               "RelativeDocumentMoniker": "ProjetoFinalAtletasTreinadores\\Models\\Atleta.cs",

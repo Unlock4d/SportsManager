@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using ProjetoFinalAtletasTreinadores.Models;
 
 namespace ProjetoFinalAtletasTreinadores.Controllers
@@ -7,7 +8,14 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
     [Route("api/[controller]")]
     public class AtletaController : Controller
     {
-        private static string con = "SERVER=LAPTOP-DL5DG31G\\SQLEXPRESS; Database=SportsManager; uid=userTeste; pwd=passwordComplicada!; TrustServerCertificate=True;";
+        private IConfiguration configuration;
+        private string con = string.Empty;
+        public AtletaController(IConfiguration config)
+        {
+            configuration = config;
+            con = configuration.GetConnectionString("DefaultConnection");
+        }
+
 
         [HttpPost]
         public IActionResult Criar(AtletaDto atletaDto)

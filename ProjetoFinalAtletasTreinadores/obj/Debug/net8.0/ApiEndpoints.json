@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.AtletaController",
+    "Method": "Criar",
+    "RelativePath": "api/Atleta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "atletaDto",
+        "Type": "ProjetoFinalAtletasTreinadores.Models.AtletaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.AtletaController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Atleta",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "atletaid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "clientid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "atletaDto",
+        "Type": "ProjetoFinalAtletasTreinadores.Models.AtletaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.AtletaController",
+    "Method": "Buscar",
+    "RelativePath": "api/Atleta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "atletaid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

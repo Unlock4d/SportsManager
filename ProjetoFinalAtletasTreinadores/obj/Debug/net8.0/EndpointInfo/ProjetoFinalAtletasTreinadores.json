@@ -1,0 +1,145 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ProjetoFinalAtletasTreinadores",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Atleta": {
+      "post": {
+        "tags": [
+          "Atleta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtletaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtletaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtletaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Atleta"
+        ],
+        "parameters": [
+          {
+            "name": "atletaid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "clientid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtletaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtletaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtletaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Atleta"
+        ],
+        "parameters": [
+          {
+            "name": "atletaid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AtletaDto": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "modalidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emAtividade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "peso": {
+            "type": "number",
+            "format": "float"
+          },
+          "altura": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
     public class AtletaController : Controller
     {
         private static string con = "SERVER=LAPTOP-DL5DG31G\\SQLEXPRESS; Database=SportsManager; uid=userTeste; pwd=passwordComplicada!; TrustServerCertificate=True;";
-       
+
         [HttpPost]
         public IActionResult Criar(AtletaDto atletaDto)
         {
@@ -32,7 +32,7 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
         }
 
         [HttpPut]
-        public IActionResult Atualizar(int atletaid, int clientid, [FromBody] AtletaDto atletaDto)
+        public IActionResult Atualizar(int atletaid, [FromBody] AtletaDto atletaDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest("Invalid data.");
@@ -40,7 +40,6 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
             var atleta = new Atleta(con)
             {
                 IdAtleta = atletaid,
-                IdContacto = clientid,
                 Nome = atletaDto.Nome,
                 Idade = atletaDto.Idade,
                 Modalidade = atletaDto.Modalidade,
@@ -49,6 +48,8 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
                 Peso = atletaDto.Peso,
                 Altura = atletaDto.Altura
             };
+            if (atleta.GetContactIdByAtleteID() == 0)
+                return BadRequest("Erro encontrar o idContacto do atleta.");
 
             if (atleta.Atualizar() != 0)
                 return Ok("Atleta atualizado com sucesso.");

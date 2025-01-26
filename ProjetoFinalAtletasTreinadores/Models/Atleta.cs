@@ -53,6 +53,7 @@ namespace ProjetoFinalAtletasTreinadores.Models
                     _altura = value;
             }
         }
+
         public Atleta(string con) : base(con)
         {
             _conexao = con;
@@ -92,7 +93,7 @@ namespace ProjetoFinalAtletasTreinadores.Models
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("ERRO: " + ex.Message);   //Nota--> Escrever em log de erros e não na console
+                    Console.WriteLine("ERRO: " + ex.Message);
                     retID = 0;
                 }
             }
@@ -171,9 +172,6 @@ namespace ProjetoFinalAtletasTreinadores.Models
                 sqlC.Parameters.Add(parmOut);
                 sqlC.ExecuteNonQuery();
 
-
-
-
                 retID = Convert.ToInt32(parmOut.Value);
                 sqlC.Connection.Close();
                 sqlC.Connection.Dispose();
@@ -182,6 +180,40 @@ namespace ProjetoFinalAtletasTreinadores.Models
             {
                 Console.WriteLine("ERRO: " + ex.Message);
                 retID = 0;
+            }
+            return retID;
+        }
+
+        public int GetContactIdByAtleteID()
+        {
+            DataTable dtC = new DataTable();
+            SqlDataAdapter SqlA = new SqlDataAdapter();
+            int retID = 0;
+            try
+            {
+                SqlA.SelectCommand = new SqlCommand();
+                SqlA.SelectCommand.Connection = new SqlConnection(_conexao);
+                SqlA.SelectCommand.Connection.Open();
+                SqlA.SelectCommand.CommandType = CommandType.StoredProcedure;
+                SqlA.SelectCommand.CommandText = "QContactIdByAtleteID";
+                SqlA.SelectCommand.Parameters.AddWithValue("@idAtleta", IdAtleta);
+                //---
+                SqlA.Fill(dtC);
+                //--- 
+                SqlA.SelectCommand.Connection.Close();
+                SqlA.SelectCommand.Connection.Dispose();
+            }
+            catch (Exception ex)
+            {
+                dtC = null;
+            }
+            if (dtC != null)
+            {
+                foreach (DataRow r in dtC.Rows)
+                {
+                    base.IdContacto = Convert.ToInt32(r["idContacto"]);
+                }
+                retID = base.IdContacto;
             }
             return retID;
         }

@@ -84,3 +84,4 @@ C:\Users\ASUS-PC\Desktop\Licenciatura\3 ano\EngSoft\Projeto\ProjetoFinalAtletasT
 C:\Users\ASUS-PC\Desktop\Licenciatura\3 ano\EngSoft\Projeto\ProjetoFinalAtletasTreinadores\ProjetoFinalAtletasTreinadores\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\ASUS-PC\Desktop\Licenciatura\3 ano\EngSoft\Projeto\ProjetoFinalAtletasTreinadores\ProjetoFinalAtletasTreinadores\bin\Debug\net8.0\Swashbuckle.Core.dll
 C:\Users\ASUS-PC\Desktop\Licenciatura\3 ano\EngSoft\Projeto\ProjetoFinalAtletasTreinadores\ProjetoFinalAtletasTreinadores\bin\Debug\net8.0\Swashbuckle.Examples.dll
+C:\Users\ASUS-PC\Desktop\Licenciatura\3 ano\EngSoft\Projeto\ProjetoFinalAtletasTreinadores\ProjetoFinalAtletasTreinadores\obj\Debug\net8.0\ProjetoFinalAtletasTreinadores.sourcelink.json

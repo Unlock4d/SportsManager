@@ -51,5 +51,78 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.AtletaController",
+    "Method": "ObterNiveis",
+    "RelativePath": "api/Atleta/niveis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.TreinadorController",
+    "Method": "Criar",
+    "RelativePath": "api/Treinador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "treinadorDto",
+        "Type": "ProjetoFinalAtletasTreinadores.Models.TreinadorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.TreinadorController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Treinador",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "atletaid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "treinadorDto",
+        "Type": "ProjetoFinalAtletasTreinadores.Models.TreinadorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.TreinadorController",
+    "Method": "Buscar",
+    "RelativePath": "api/Treinador",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "treinadorid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoFinalAtletasTreinadores.Controllers.TreinadorController",
+    "Method": "ObterNiveis",
+    "RelativePath": "api/Treinador/niveis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

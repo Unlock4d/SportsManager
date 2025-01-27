@@ -21,7 +21,13 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
         public IActionResult Criar(AtletaDto atletaDto)
         {
             if (!ModelState.IsValid)
-                return BadRequest("Invalid data.");
+                return BadRequest("Invalid data!");
+
+            if (!Enum.IsDefined((Modalidade)atletaDto.Modalidade))
+                return BadRequest("Modalidade não existe na lista.");
+
+            if (!Enum.IsDefined((StatusAtividade)atletaDto.emAtividade))
+                return BadRequest("Status de atividade não existe!");
 
             var atleta = new Atleta(con)
             {
@@ -43,8 +49,14 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
         public IActionResult Atualizar(int atletaid, [FromBody] AtletaDto atletaDto)
         {
             if (!ModelState.IsValid)
-                return BadRequest("Invalid data.");
-            
+                return BadRequest("Invalid data!");
+
+            if (Enum.IsDefined((Modalidade)atletaDto.Modalidade))
+                return BadRequest("Modalidade não existe!");
+
+            if (!Enum.IsDefined((StatusAtividade)atletaDto.emAtividade))
+                return BadRequest("Status de atividade não existe!");
+
             var atleta = new Atleta(con)
             {
                 IdAtleta = atletaid,
@@ -57,26 +69,39 @@ namespace ProjetoFinalAtletasTreinadores.Controllers
                 Altura = atletaDto.Altura
             };
             if (atleta.GetContactIdByAtleteID() == 0)
-                return BadRequest("Erro encontrar o idContacto do atleta.");
+                return BadRequest("Erro encontrar o idContacto do atleta!");
 
             if (atleta.Atualizar() != 0)
                 return Ok("Atleta atualizado com sucesso.");
             else
-                return BadRequest("Erro ao atualizar atleta.");
+                return BadRequest("Erro ao atualizar atleta!");
         }
 
         [HttpGet]
         public IActionResult Buscar(int atletaid)
         {
             if (!ModelState.IsValid)
-                return BadRequest("Invalid data.");
+                return BadRequest("Invalid data!");
 
             var atleta = new Atleta(con);
 
             if (atleta.Buscar(atletaid) != 0)
                 return Ok(atleta);
             else
-                return BadRequest("Erro ao encontrar atleta.");
+                return BadRequest("Erro ao encontrar atleta!");
+        }
+        [HttpGet("niveis")]
+        public IActionResult ObterNiveis()
+        {
+            var modalidade = Enum.GetValues(typeof(Modalidade))
+                             .Cast<Modalidade>()
+                             .Select(n => new
+                             {
+                                 Nome = n.ToString(),
+                                 Valor = (int)n
+                             });
+
+            return Ok(modalidade);
         }
     }
 }

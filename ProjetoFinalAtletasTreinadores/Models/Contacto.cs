@@ -3,6 +3,11 @@ using System.Data;
 
 namespace ProjetoFinalAtletasTreinadores.Models
 {
+    public enum StatusAtividade
+    {
+        Reformado = 0,
+        Ativo = 1
+    }
     public abstract class Contacto
     {
         private string _conexao = "";

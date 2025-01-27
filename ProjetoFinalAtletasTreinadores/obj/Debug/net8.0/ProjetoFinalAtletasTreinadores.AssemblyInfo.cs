@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoFinalAtletasTreinadores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3baa87a4cd65844c2c1fc97702ae3897ddf74aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c731f125e7288784537751e074c55da84a3bd3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoFinalAtletasTreinadores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoFinalAtletasTreinadores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

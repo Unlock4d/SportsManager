@@ -1,5 +1,4 @@
 ﻿using Microsoft.Data.SqlClient;
-using Swashbuckle.AspNetCore.Annotations;
 using System.Data;
 
 namespace ProjetoFinalAtletasTreinadores.Models
@@ -13,6 +12,19 @@ namespace ProjetoFinalAtletasTreinadores.Models
         public string Descricao { get; set; }
         public float Peso { get; set; }
         public float Altura { get; set; }
+    }
+    public enum Modalidade
+    {
+        Futebol = 1,
+        Basquetebol = 2,
+        Voleibol = 3,
+        Ténis = 4,
+        Atletismo = 5,
+        Natação = 6,
+        Ciclismo = 7,
+        ArtesMarciais = 8,
+        Esgrima = 9,
+        Ginástica = 10
     }
     public class Atleta : Contacto
     {
@@ -217,5 +229,7 @@ namespace ProjetoFinalAtletasTreinadores.Models
             }
             return retID;
         }
+
+       
     }
 }
